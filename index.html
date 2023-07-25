@@ -12,15 +12,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- font awesome kit integration -->
+<script src="https://kit.fontawesome.com/6f4c5cea35.js" crossorigin="anonymous"></script>
     <!-- tailwind integrated -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind customize class creation -->
-    <style>
+    <style type="text/tailwindcss">
         .eb{
             font-family: 'EB Garamond', serif;
         }
         .pop{
             font-family: 'Poppins', sans-serif;
+        }
+        .btn{
+            @apply bg-[#B68C5A] rounded-lg text-white 
         }
 
     </style>
@@ -29,10 +34,10 @@
     <!-- header -->
     <header class="max-w-screen-xl mx-auto">
         <!-- nav section -->
-        <nav>
+        <nav class="flex items-center justify-center mt-16 gap-40">
             <div><img src="./images/logo2.png" alt="logo"></div>
             <div>
-                <ul>
+                <ul class="flex  gap-12 pop text-[#707070]">
                     <li>Home </li>
                     <li>Service <i class="fa-solid fa-chevron-right"></i></li>
                     <li>Cases <i class="fa-solid fa-chevron-right"></i></li>
@@ -42,7 +47,7 @@
                 </ul>
             </div>
             <div>
-                <button>Free Consultation</button>
+                <button class="btn py-4 px-7 pop">Free Consultation</button>
             </div>
         </nav>
     </header>
